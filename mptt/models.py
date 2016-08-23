@@ -386,7 +386,7 @@ class MPTTModel(six.with_metaclass(MPTTModelBase, models.Model)):
     """
     Base class for tree models.
     """
-    _default_manager = TreeManager()
+    objects = TreeManager()
 
     class Meta:
         abstract = True
